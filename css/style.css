@@ -1,0 +1,68 @@
+.wrapper {
+  min-height: 100%;
+  background: #fff;
+  position: relative;
+}
+.height100 {
+  min-height: 100%;
+  position: relative;
+}
+.hero_wrapper {
+  padding-top: 50.5%;
+  height:0;
+  width: 100%;
+}
+header {
+  min-height:600px;
+  left:0;
+  top:0;
+  position: fixed;
+  overflow: hidden;
+  width:100%;
+  background: url(../img/2.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top center; 
+
+}
+.hero{
+  position: fixed;
+  left:0;
+  top:0;
+  max-width:100%;
+  vertical-align: middle;
+  overflow: hidden;
+  min-height: 600px;
+}
+header h1 {
+  position: absolute;
+  width: 100%;
+  top:40%;
+  text-align: center;
+  color:white;
+}
+nav {
+  position: fixed;
+  top:0;
+  width: 100%;
+  text-align: center;
+  height:50px;
+  background: #eee;
+  border-bottom: 1px solid #444;
+  z-index: 1
+}
+nav ul, nav ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+nav ul li {
+  margin:0 5px;
+  line-height: 50px;
+}
+.content {
+  padding-top: 50px;
+  margin-top: 600px;
+  position: relative;
+  background: #fff;
+  width: 100%
+}
