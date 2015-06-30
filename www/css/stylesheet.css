@@ -122,13 +122,30 @@ main {
 }
 .project-image-container {
 	position: relative;
+	height:250px;
+	border: 1px solid darkgrey;
+	padding:8px;
+	margin-bottom: 1rem;
 }
+.projectx {
+	background-size: cover;
+	background-position: 50% 50%;
+	height:100%;
+	width: 100%;
+}
+.project1, .project3 {
+	background-image:url(../images/projekt1.jpg);
+}
+.project2, .project4 {
+	background-image:url(../images/projekt2.jpg);
+}
+
 .project-image-container p {
 	opacity: 1;
 	position: absolute;
-	bottom:17px;
-	left:11px;
-	right:11px;
+	bottom:8px;
+	left:8px;
+	right:8px;
 	margin:0;
 	padding:1.5rem;
 	background:rgba(0,0,0,0.6);
@@ -138,13 +155,17 @@ main {
 	-o-transition: all .4s ease-out 0.1s;
 	transition: all .4s ease-out 0.1s;
 }
-.project-image-container p:hover, .project-image-container:hover > p{
+.project-image-container p:hover, .projectx:hover > p{
 	opacity: 0;
 }
 .project-image {
 	width:100%;
-	border: 1px solid darkgrey;
-	padding:10px;
+	height:100%;
+	object-fit: cover;
+	-webkit-transition: all .4s ease-out 0.1s;
+	-moz-transition: all .4s ease-out 0.1s;
+	-o-transition: all .4s ease-out 0.1s;
+	transition: all .4s ease-out 0.1s;
 }
 .headline {
 	color:rgba(30,30,30,0.8);
