@@ -1,4 +1,9 @@
 <?php include("include/head.php") ?>
+<script>
+	$( document ).ready(function() {
+		$("#link_home").addClass("active");
+	});
+</script>
 <?php include("include/header.php") ?>
 	<main class="boxshadow">
 		<div class="container">

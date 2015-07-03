@@ -38,7 +38,8 @@
 				//Waypoint Nav
 				var waypoints = $('main').waypoint({
 					handler: function() {
-						$("nav").toggleClass("nav_waypoint")
+						$("nav").toggleClass("nav_waypoint");
+						$("#scrolltotop").fadeToggle();
 							/*
 							if ($("nav").css("opacity") == "1")
 								$("nav").toggleClass("nav_waypoint").animate({"opacity": "0.5"});
@@ -55,5 +56,9 @@
 					$("nav div.container ul").toggleClass("notmobile");
 				})
 
+				$("#scrolltotop").click(function() {
+					$("html, body").animate({ scrollTop: 0 }, "fast");
+					return false;
+				})
 			});
 		</script>

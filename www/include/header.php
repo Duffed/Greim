@@ -2,16 +2,16 @@
 <body>
 	<nav>
 		<ul class="onlymobile menu-bar"><li><a class="fa">&#xf0c9;</a></li></ul>
-		<img src="images/greim.png" class="onlymobile logo" alt="Greim">
+		<a href="index.php"><img src="images/greim.png" class="onlymobile logo" alt="Greim"></a>
 		<div class="container">
 			<ul class="menu notmobile">
-				<li><a href="#" class="active">Home</a></li
-				><li><a href="#">Unternehmen</a></li
-				><li><a href="#">Team</a></li
-				><li><a href="#">Projekte</a></li
-				><li><a href="kontakt.php">Kontakt</a></li>
+				<li><a id="link_home" href="index.php">Home</a></li
+				><li><a id="link_unternehmen" href="#">Unternehmen</a></li
+				><li><a id="link_team" href="#">Team</a></li
+				><li><a id="link_projekte" href="#">Projekte</a></li
+				><li><a id="link_kontakt" href="kontakt.php">Kontakt</a></li>
 			</ul>
-			<img src="images/greim.png" class="notmobile logo" alt="Greim"> 
+			<a href="index.php"><img src="images/greim.png" class="notmobile logo" alt="Greim"></a>
 		</div>
 	</nav>
 

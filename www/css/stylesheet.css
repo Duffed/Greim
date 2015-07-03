@@ -1,3 +1,5 @@
+/* #002795 */
+
 * { box-sizing: border-box;}
 
 .fullheight {
@@ -84,9 +86,6 @@ img.logo {
 	left:0;
 	top:0;
 	height:100%;
-}
-img.logo-footer {
-	
 }
 
 img.hero-text { /*Logo im hero */
@@ -204,8 +203,71 @@ main {
 
 footer {
 	background: #303030;
-	color:#eee;
-	height:200px;
+	min-height:80px;
+}
+footer a {
+	color:#bbb;
+}
+footer a:hover {
+	color:#fff;
+}
+footer p {
+	margin:0;
+	color:#aaa;
+	line-height: 80px;
+	font-size: 1.4rem;
+}
+footer p i.fa {
+	color:#ddd;
+	margin:0 8px;
+	font-size: 1.8rem;
+}
+footer img {
+	float:left;
+	margin-right:3rem;
+	margin-top:8px;
+}
+div.footer-c {
+	height:18px;
+	background:#101010;
+
+}
+div.footer-c p {
+	font-size: 1rem;
+	line-height: 18px;
+	color:#666;
+}
+#scrolltotop {
+	display: none;
+	cursor: pointer;
+	font-size: 25px;
+	line-height: 20px;
+	z-index: 9999;
+	position: fixed;
+	padding:8px 11px;
+	opacity: 0.5;
+	background:#666;
+	bottom:50px;
+	right:50px;
+	color:#fff;
+}
+#scrolltotop:hover {
+	opacity: 0.8;
+}
+
+@media (max-width:855px){
+	footer span {
+		display: block;
+	}
+	footer p {
+		line-height: 4rem
+	}
+	footer img {
+		float:none;
+	}
+	#scrolltotop {
+		right:30px;
+	}
 }
 
 .onlymobile {display:none;}
@@ -235,14 +297,25 @@ ul.onlymobile.menu-bar li {
 	cursor: pointer;
 	margin:3.5rem 0;
 }
+#intro_kontaktformular:hover > hr {
+	border-color:#002795;
+}
 #intro_kontaktformular hr, #intro_kontaktformular p {
 	margin:0;
+	-webkit-transition: all .4s ease-out 0.1s;
+	-moz-transition: all .4s ease-out 0.1s;
+	-o-transition: all .4s ease-out 0.1s;
+	transition: all .4s ease-out 0.1s;
 }
 #intro_kontaktformular i {
-	color:red;
+	color:#002795;
 }
 #kontaktformular {
 	display:none;
+}
+#googlemaps {
+	height:350px;
+	border:1px solid lightgrey;
 }
 
 @media (max-width: 720px) {
