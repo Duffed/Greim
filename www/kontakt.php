@@ -1,98 +1,20 @@
-<!doctype html>
-<html>
-	<head>		
-		<!-- Basic Page Needs
-		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-		<meta charset="utf-8">
-		<title>Greim Architekten</title>
-		<meta name="description" content="">
-		<meta name="author" content="">
+<?php include("include/head.php") ?>
+<script>
+	$( document ).ready(function() {
 
-		<!-- Mobile Specific Metas
-		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-
-		<!-- FONT
-		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-		<!--
-			<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-		-->
-		<!-- CSS
-		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/skeleton.css">
-		<link rel="stylesheet" href="css/stylesheet.css">
-		<link rel="stylesheet" href="css/font-awesome.min.css">
-
-		<!-- JS
-		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-		<script src="js/jquery-2.0.2.min.js"></script> 	<!-- 1 -->
-		<script src="js/jquery.waypoints.min.js"></script>
-		<script src="js/detectmobilebrowser.js"></script>
-
-		<script>
-
-			$( document ).ready(function() {
-				
-
-				//Waypoint Nav
-				var waypoints = $('main').waypoint({
-					handler: function() {
-						$("nav").toggleClass("nav_waypoint")
-					},
-					offset: "60px"
-				})
-
-				//Onclick Nav Burger
-				$("ul.menu-bar li").click(function() {
-					//$("nav div.container ul").stop().toggle("fade");
-					$("nav div.container ul").toggleClass("notmobile");
-				})
-
-
-
-			});
-		</script>
-		<script>
-			$( document ).ready(function() {
-				//Onclick Kontaktformular
-				$("div#intro_kontaktformular").click(function() {
-					$("#kontaktformular").stop().slideToggle();
-					$("#intro_kontaktformular i").toggleClass("fa-chevron-down");
-					$("#intro_kontaktformular i").toggleClass("fa-chevron-up");
-				})
-			});
-		</script>
-	</head>
-
-	
-<body>
-
-	<nav>
-		<ul class="onlymobile menu-bar"><li><a class="fa">&#xf0c9;</a></li></ul>
-		<img src="images/greim.png" class="onlymobile logo" alt="Greim">
-		<div class="container">
-			<ul class="notmobile">
-				<li><a href="index.php">Home</a></li
-				><li><a href="#">Unternehmen</a></li
-				><li><a href="#">Team</a></li
-				><li><a href="#">Projekte</a></li
-				><li><a href="#" class="active">Kontakt</a></li>
-			</ul>
-			<img src="images/greim.png" class="notmobile logo" alt="Greim"> 
-		</div>
-	</nav>
-
-	<div id="hero" > <!--data-parallax="scroll" data-naturalWidth="1920" data-image-src="images/az3.jpg" -->
-		<div class="container fullheight">	
-			<img class="hero-text notmobile400" src="images/logo2_trans_b.png" alt="Greim Architekten" >
-		</div>
-	</div>
+		
+		//Onclick Kontaktformular
+		$("div#intro_kontaktformular").click(function() {
+			$("#kontaktformular").stop().slideToggle();
+			$("#intro_kontaktformular i").toggleClass("fa-chevron-down");
+			$("#intro_kontaktformular i").toggleClass("fa-chevron-up");
+		})
+	});
+</script>
+<?php include("include/header.php") ?>
 
 	<main class="boxshadow">
 		<div class="container">
-
-
 			<div class="row">
 				<div class="four columns">
 					<h4 class="headline">Telefon</h4>
@@ -113,7 +35,7 @@
 			<div id="intro_kontaktformular" class="row">
 				<p>Kontaktformular</p>
 				<hr>
-				<i class="fa fa-chevron-up"></i>
+				<i class="fa fa-chevron-down"></i>
 			</div>
 
 			<!-- Kontaktformular -->
@@ -149,28 +71,6 @@
 		</div>
 	</main>
 
-	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="three columns logo-footer">
-					<img src="images/greim.png" class="logo-footer" alt="Greim">
-				</div>
-				<div class="three columns">
-
-				</div>
-				<div class="three columns">
-
-
-				</div>
-				<div class="three columns">
-
-
-				</div>
-			</div>
-		</div>
-	</footer>
-
-</body>
-</html>
+<?php include("include/footer.php") ?>
 
 

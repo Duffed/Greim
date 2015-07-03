@@ -1,88 +1,63 @@
-<!doctype html>
-<html>
-	<head>		
-		<!-- Basic Page Needs
-		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-		<meta charset="utf-8">
-		<title>Your page title here :)</title>
-		<meta name="description" content="">
-		<meta name="author" content="">
-
-		<!-- Mobile Specific Metas
-		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-
-		<!-- FONT
-		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-		<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-
-		<!-- CSS
-		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/skeleton.css">
-		<link rel="stylesheet" href="css/stylesheet.css">
-
-		<!-- CJS
-		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/parallax.js"></script>
-		<script src="js/jquery.waypoints.min.js"></script>
-	</head>
-	<script>
-		$( document ).ready(function() {
-			var waypoints = $('div.content').waypoint({
-				handler: function() {
-					
-						if ($("nav").css("opacity") == "1")
-							$("nav").animate({"opacity": "0.5", "height": "30px", "line-height": "30px"});
-						else
-							$("nav").animate({"opacity": "1", "height": "50px", "line-height": "50px"});
-						
-					
-				},
-				offset: "70px"
-			})
-
-		});
-	</script>
-<body>
-
-	<nav >
+<?php include("include/head.php") ?>
+<?php include("include/header.php") ?>
+	<main class="boxshadow">
 		<div class="container">
-			<ul>
-				<li>Home</li>
-				<li>Unternehmen</li>
-				<li>Team</li>
-				<li>Kontakt</li>
-				<li>Impressum</li>
-			</ul>
-			<img src="images/logo_trans_w.png" class="logo">
+			<div class="row">
+				<div class="column">
+					<h4 class="headline">Projekte</h4>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="six columns">
+					<div class="project-image-container ">
+						<div class="projectx project1">
+							<p>Text der im Bild steht</p>
+						</div>
+					</div>
+					<p>Beispieltext über Projekt 1: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, est possimus ex ipsum dolore minus id molestiae nisi, a quod deleniti in repudiandae, nihil, totam unde ipsa facere odio iusto.</p>
+				</div>
+				<div class="six columns">
+					<div class="project-image-container">
+						<div class="projectx project2">
+							<p>Text der im Bild steht</p>
+						</div>
+					</div>
+					<p>Beispieltext über Projekt 2: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, distinctio, totam nobis recusandae labore tempore reprehenderit, at quisquam nemo sed iure ducimus iusto magnam eaque, dolorem aspernatur minima esse odio.</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="six columns">
+					<div class="project-image-container ">
+						<div class="projectx project3">
+							<p>Text der im Bild steht</p>
+						</div>
+					</div>
+					<p>Beispieltext über Projekt 2: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, distinctio, totam nobis recusandae labore tempore reprehenderit, at quisquam nemo sed iure ducimus iusto magnam eaque, dolorem aspernatur minima esse odio.</p>
+				</div>
+				<div class="six columns">
+					<div class="project-image-container ">
+						<div class="projectx project4">
+							<p>Text der im Bild steht</p>
+						</div>
+					</div>
+					<p>Beispieltext über Projekt 1: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, est possimus ex ipsum dolore minus id molestiae nisi, a quod deleniti in repudiandae, nihil, totam unde ipsa facere odio iusto.</p>
+				</div>
+			</div>
 		</div>
-
-	</nav>
-
-	<div data-parallax="scroll" data-image-src="hg.jpg" data-naturalWidth="1920" id="hero">
-		<div class="container fullheight">	
-			<img class="hero-text" src="images/logo_trans_b.png" alt="">
+		
+		<div id="team-hero">
+			<h2>Team</h2>
 		</div>
-	</div>
-
-	<div class="content">
-	    <div class="container">
-	      <div class="row">
-	        <div class="one-half column">
-	          <h4>Basic Page</h4>
-	          <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
-	        </div>
-	        <div class="one-half column">
-	          <h3>Second Half</h3>
-	          <p>Text text yes</p>
-	            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-	        </div>
-	      </div>
-	    </div>
-	</div>
-
-</body>
-</html>
+		<div class="container">
+			<div class="row">
+				<div class="column">
+					<p>Text über Team <br>
+					Zeile <br>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et odit aperiam alias fugiat tempora id, consectetur atque repudiandae laborum culpa. Soluta iusto ratione, veniam sit. Eaque dolor, inventore nostrum consectetur.</p>
+				</div>
+			</div>
+		</div>
+	</main>
+<?php include("include/footer.php") ?>

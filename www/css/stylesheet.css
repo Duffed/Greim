@@ -242,7 +242,7 @@ ul.onlymobile.menu-bar li {
 	color:red;
 }
 #kontaktformular {
-
+	display:none;
 }
 
 @media (max-width: 720px) {
