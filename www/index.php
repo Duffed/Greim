@@ -75,7 +75,7 @@
 		<ul class="onlymobile menu-bar"><li><a class="fa">&#xf0c9;</a></li></ul>
 		<img src="images/greim.png" class="onlymobile logo" alt="Greim">
 		<div class="container">
-			<ul class="notmobile">
+			<ul class="menu notmobile">
 				<li><a href="#" class="active">Home</a></li
 				><li><a href="#">Unternehmen</a></li
 				><li><a href="#">Team</a></li
