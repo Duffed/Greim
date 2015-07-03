@@ -39,12 +39,6 @@
 				var waypoints = $('main').waypoint({
 					handler: function() {
 						$("nav").toggleClass("nav_waypoint")
-							/*
-							if ($("nav").css("opacity") == "1")
-								$("nav").toggleClass("nav_waypoint").animate({"opacity": "0.5"});
-							else
-								$("nav").toggleClass("nav_waypoint").animate({"opacity": "1"});
-							*/
 					},
 					offset: "60px"
 				})
@@ -55,15 +49,18 @@
 					$("nav div.container ul").toggleClass("notmobile");
 				})
 
-				//Stellar
-				if (!jQuery.browser.mobile) {
-					$.stellar({
-						verticalScrolling: true,
-						
-						scrollProperty: 'scroll'
-					});
-				}
 
+
+			});
+		</script>
+		<script>
+			$( document ).ready(function() {
+				//Onclick Kontaktformular
+				$("div#intro_kontaktformular").click(function() {
+					$("#kontaktformular").stop().slideToggle();
+					$("#intro_kontaktformular i").toggleClass("fa-chevron-down");
+					$("#intro_kontaktformular i").toggleClass("fa-chevron-up");
+				})
 			});
 		</script>
 	</head>
@@ -76,17 +73,17 @@
 		<img src="images/greim.png" class="onlymobile logo" alt="Greim">
 		<div class="container">
 			<ul class="notmobile">
-				<li><a href="#" class="active">Home</a></li
+				<li><a href="index.php">Home</a></li
 				><li><a href="#">Unternehmen</a></li
 				><li><a href="#">Team</a></li
 				><li><a href="#">Projekte</a></li
-				><li><a href="kontakt.php">Kontakt</a></li>
+				><li><a href="#" class="active">Kontakt</a></li>
 			</ul>
 			<img src="images/greim.png" class="notmobile logo" alt="Greim"> 
 		</div>
 	</nav>
 
-	<div id="hero" data-width="1024" data-height="813"> <!--data-parallax="scroll" data-naturalWidth="1920" data-image-src="images/az3.jpg" -->
+	<div id="hero" > <!--data-parallax="scroll" data-naturalWidth="1920" data-image-src="images/az3.jpg" -->
 		<div class="container fullheight">	
 			<img class="hero-text notmobile400" src="images/logo2_trans_b.png" alt="Greim Architekten" >
 		</div>
@@ -94,62 +91,61 @@
 
 	<main class="boxshadow">
 		<div class="container">
+
+
 			<div class="row">
-				<div class="column">
-					<h4 class="headline">Projekte</h4>
+				<div class="four columns">
+					<h4 class="headline">Telefon</h4>
+					<p>1234/5342523</p>
+				</div>
+				<div class="four columns">
+					<h4 class="headline">Email</h4>
+					<p>greim@web.de</p>
+				</div>
+				<div class="four columns">
+					<h4 class="headline">Anschrift</h4>
+					<p>Greim Architekten <br>
+					Musterstraße 1-11 <br><br>
+					55421 Musterhausen</p>
 				</div>
 			</div>
 
-			<div class="row">
-				<div class="six columns">
-					<div class="project-image-container ">
-						<div class="projectx project1">
-							<p>Text der im Bild steht</p>
-						</div>
-					</div>
-					<p>Beispieltext über Projekt 1: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, est possimus ex ipsum dolore minus id molestiae nisi, a quod deleniti in repudiandae, nihil, totam unde ipsa facere odio iusto.</p>
-				</div>
-				<div class="six columns">
-					<div class="project-image-container">
-						<div class="projectx project2">
-							<p>Text der im Bild steht</p>
-						</div>
-					</div>
-					<p>Beispieltext über Projekt 2: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, distinctio, totam nobis recusandae labore tempore reprehenderit, at quisquam nemo sed iure ducimus iusto magnam eaque, dolorem aspernatur minima esse odio.</p>
-				</div>
+			<div id="intro_kontaktformular" class="row">
+				<p>Kontaktformular</p>
+				<hr>
+				<i class="fa fa-chevron-up"></i>
 			</div>
 
-			<div class="row">
-				<div class="six columns">
-					<div class="project-image-container ">
-						<div class="projectx project3">
-							<p>Text der im Bild steht</p>
-						</div>
+			<!-- Kontaktformular -->
+			<form id="kontaktformular">
+				<div class="row">
+					<div class="six columns">
+						<label for="exampleEmailInput">Ihre Email-Adresse</label>
+						<input class="u-full-width" type="email" placeholder="test@mailbox.de" id="exampleEmailInput">
 					</div>
-					<p>Beispieltext über Projekt 2: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, distinctio, totam nobis recusandae labore tempore reprehenderit, at quisquam nemo sed iure ducimus iusto magnam eaque, dolorem aspernatur minima esse odio.</p>
-				</div>
-				<div class="six columns">
-					<div class="project-image-container ">
-						<div class="projectx project4">
-							<p>Text der im Bild steht</p>
-						</div>
+					<div class="six columns">
+						<label for="betreff">Betreff</label>
+						<input class="u-full-width" type="text" placeholder="Um was geht es?" id="betreff">
 					</div>
-					<p>Beispieltext über Projekt 1: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, est possimus ex ipsum dolore minus id molestiae nisi, a quod deleniti in repudiandae, nihil, totam unde ipsa facere odio iusto.</p>
 				</div>
-			</div>
-		</div>
-		
-		<div id="team-hero">
-			<h2>Team</h2>
-		</div>
-		<div class="container">
-			<div class="row">
-				<div class="column">
-					<p>Text über Team <br>
-					Zeile <br>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et odit aperiam alias fugiat tempora id, consectetur atque repudiandae laborum culpa. Soluta iusto ratione, veniam sit. Eaque dolor, inventore nostrum consectetur.</p>
-				</div>
-			</div>
+				<label for="exampleMessage">Nachricht</label>
+				<textarea class="u-full-width" placeholder="Ihre Nachricht an uns" id="exampleMessage"></textarea>
+
+				<?php 
+					$zahl1 = rand(10,20);
+					$zahl2 = rand(1,9);
+					$ergebnis = $zahl1+$zahl2;
+				?>
+
+				<label for="captcha"><?php echo $zahl1." + ".$zahl2." = "?></label>
+				<input type="text" placeholder="Captcha" class="u-full-width">
+				<label class="example-send-yourself-copy">
+					<input type="checkbox">
+					<span class="label-body">Kopie an mich selbst schicken</span>
+				</label>
+				<input class="button-primary" type="submit" value="Submit">
+			</form>
+
 		</div>
 	</main>
 

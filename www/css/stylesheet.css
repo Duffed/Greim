@@ -230,6 +230,21 @@ ul.onlymobile.menu-bar li {
 	cursor: pointer;
 }
 
+#intro_kontaktformular {
+	text-align: center;
+	cursor: pointer;
+	margin:3.5rem 0;
+}
+#intro_kontaktformular hr, #intro_kontaktformular p {
+	margin:0;
+}
+#intro_kontaktformular i {
+	color:red;
+}
+#kontaktformular {
+
+}
+
 @media (max-width: 720px) {
 	.onlymobile {display:block;}
 	.notmobile {display: none}
