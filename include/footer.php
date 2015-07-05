@@ -15,6 +15,6 @@
 			</div>
 		</div>
 	</footer>
-	</div>
+	<!-- #Wrapper -->
 </body>
 </html>

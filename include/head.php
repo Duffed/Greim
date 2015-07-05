@@ -24,24 +24,16 @@
 		<link rel="stylesheet" href="css/skeleton.css">
 		<link rel="stylesheet" href="css/stylesheet.css">
 		<link rel="stylesheet" href="css/font-awesome.min.css">
-		<link rel="stylesheet" href="css/slidebars.css">
 
 		<!-- JS
 		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 		<script src="js/jquery-2.0.2.min.js"></script> 	<!-- 1 -->
 		<script src="js/jquery.waypoints.min.js"></script>
 		<script src="js/detectmobilebrowser.js"></script>
-		<script src="js/slidebars.js"></script>
-		<script src="js/jquery.parascroll.js"></script>
 
 		<script>
 			$( document ).ready(function() {
 
-				//Init Slidebars
-				$.slidebars({
-					disableOver: 720
-				});
-				
 				//Waypoint Nav
 				var waypoints = $('main').waypoint({
 					handler: function() {
@@ -62,5 +54,9 @@
 					return false;
 				})
 
+				$("ul.onlymobile").click(function() {
+					$("#mobile-menu").toggleClass("menu-open");
+					$("#wrapper").toggleClass("menu-open");
+				})
 			});
 		</script>

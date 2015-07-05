@@ -79,7 +79,7 @@ nav.nav_waypoint {
 	background: rgba(238, 238, 238, 1);
 }
 
-nav ul, .sb-slidebar ul {
+nav ul, #mobile-menu ul {
 	list-style-type: none;
 	margin:0;
 }
@@ -94,33 +94,53 @@ nav ul li a {
 	display: block;
 	text-align: center;
 }
-nav ul li a.active, .sb-slidebar ul li a.active {
+nav ul li a.active, #mobile-menu ul li a.active {
 	font-weight: bold;
 }
-.sb-slidebar ul li a.active {
+#mobile-menu ul li a.active {
 	background:#fff;
 }
 nav ul li a:active, nav ul li a:visited, nav ul li a:link,
-.sb-slidebar ul li a,.sb-slidebar ul li a:active, .sb-slidebar ul li a:active, .sb-slidebar ul  li a:active{
+#mobile-menu ul li a,#mobile-menu ul li a:active, #mobile-menu ul li a:active, #mobile-menu ul  li a:active{
 	color:#333;
 	-webkit-transition: all .4s ease-out 0.1s;
 	-moz-transition: all .4s ease-out 0.1s;
 	-o-transition: all .4s ease-out 0.1s;
 	transition: all .4s ease-out 0.1s;
 }
-nav ul li a:hover,.sb-slidebar ul li a:hover {
+nav ul li a:hover,#mobile-menu ul li a:hover {
 	background:#fff;
 }
 
 /* Slidebar Nav */
-.sb-slidebar ul li a {
+#mobile-menu {
+	position: fixed;
+	right:0;
+	top:0;
+	bottom:0;
+	width:250px;
+	background: #eee;
+	z-index: 9999999;
+	overflow:auto;
+	transition: transform 0.3s;
+	transform:translateX(250px);
+}
+#mobile-menu.menu-open {
+	transform:translateX(0px);
+}
+
+#mobile-menu ul li a {
 	display: block;
 	padding:20px;
 	border-bottom: 1px solid white;
 	margin:0;
 }
-.sb-slidebar ul li {
+#mobile-menu ul li {
 	margin:0;
+}
+#close-x {
+	cursor: pointer;
+	text-align: center;
 }
 
 img.logo {
@@ -217,6 +237,7 @@ main {
 	left:0px;
 	width:100%;
 	height:60vh;
+	z-index: -100
 }
 
 #team-hero {
@@ -230,12 +251,6 @@ main {
 	background-position: 50% 0;
 	margin:2.5rem 0;
 	box-shadow: inset 0px 0px 4px #555;
-	transform: translateZ(0);
-	-moz-transform: translatez(0);
-	-ms-transform: translatez(0);
-	-o-transform: translatez(0);
-	-webkit-transform: translateZ(0);
-	-webkit-font-smoothing: antialiased; 
 }
 #team-hero h2 {
 	color:#eee;
