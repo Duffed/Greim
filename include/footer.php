@@ -1,5 +1,5 @@
 	<div id="scrolltotop"><i class="fa fa-angle-up"></i></div>
-	<footer>
+	<footer class="boxshadow">
 		<div class="container">
 			<img src="images/greim_w.png" class="logo-footer" alt="Greim">
 			<p>
@@ -15,5 +15,6 @@
 			</div>
 		</div>
 	</footer>
+	</div>
 </body>
 </html>

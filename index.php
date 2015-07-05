@@ -1,7 +1,7 @@
 <?php include("include/head.php") ?>
 <script>
 	$( document ).ready(function() {
-		$("#link_home").addClass("active");
+		$(".link_home").addClass("active");
 	});
 </script>
 <?php include("include/header.php") ?>

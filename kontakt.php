@@ -1,6 +1,5 @@
 <?php include("include/head.php") ?>
 <script>
-
 	$( document ).ready(function() {
 		//Onclick Kontaktformular
 		$("div#intro_kontaktformular").click(function() {
@@ -9,7 +8,7 @@
 			$("#intro_kontaktformular i").toggleClass("fa-chevron-up");
 		})
 
-		$("#link_kontakt").addClass("active");
+		$(".link_kontakt").addClass("active");
 	});
 </script>
 <?php include("include/header.php") ?>
@@ -27,7 +26,7 @@
 				</div>
 			</div>
 	
-			<iframe class="u-full-width" id="googlemaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1283.7648537113694!2d11.57923139882384!3d49.945165178171436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a1a2c5532c0c5b%3A0x6800e73e6fd406d0!2sW%C3%B6lfelstra%C3%9Fe+6%2C+95444+Bayreuth!5e0!3m2!1sde!2sde!4v1435954462821" allowfullscreen></iframe>
+			<iframe class="u-full-width" id="googlemaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1283.7648537113694!2d11.57923139882384!3d49.945165178171436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a1a2c5532c0c5b%3A0x6800e73e6fd406d0!2sW%C3%B6lfelstra%C3%9Fe+6%2C+95444+Bayreuth!5e0!3m2!1sde!2sde!4v1435954462821" allowfullscreen draggable="false"></iframe>
 	
 
 			<div id="intro_kontaktformular" class="row">
