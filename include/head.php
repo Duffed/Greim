@@ -54,9 +54,29 @@
 					return false;
 				})
 
-				$("ul.onlymobile").click(function() {
-					$("#mobile-menu").toggleClass("menu-open");
-					$("#wrapper").toggleClass("menu-open");
+				//Mobile Menu open-close
+				function closemenu() {
+					$("#mobile-menu").removeClass("menu-open");
+				}
+				$("ul.onlymobile").click(function(e) {
+					e.stopPropagation();
+					if ($("#mobile-menu").hasClass("menu-open")){
+						closemenu();
+					} else {
+						$("#mobile-menu").addClass("menu-open");
+					}
 				})
+				$("#close-x a").click(function() {
+					closemenu();
+				})
+				$("#mobile-menu").click(function() {
+					closemenu();
+				})
+				$(document.body).click(function(e){
+					closemenu();
+				})
+
 			});
 		</script>
+
+

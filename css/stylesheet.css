@@ -7,15 +7,33 @@
   box-sizing: inherit;
 }
 
-#wrapper {
-	position: relative;
-	min-height: 100%;
+/* Gallery (Projekte) */
+.gallery {
+	list-style: none;
+	margin-left:-2.5%;
+	font-size: 0px;
 }
+.gallery li {
+	display: inline-block;
+	padding:8px;
+	margin: 0 0 2.5% 2.5%;
+	background:#fff;
+	border: 1px solid darkgrey;
+	vertical-align: top;
+
+	width:30.81%;
+}
+.gallery li img {
+	max-width: 100%;
+	height:auto;
+	margin: 0 0 0px;
+}
+
 .greyscale {
-	-webkit-transition: all .4s ease-out 0.1s;
-	-moz-transition: all .4s ease-out 0.1s;
-	-o-transition: all .4s ease-out 0.1s;
-	transition: all .4s ease-out 0.1s;
+	-webkit-transition: all .4s ease-out 0s;
+	-moz-transition: all .4s ease-out 0s;
+	-o-transition: all .4s ease-out 0s;
+	transition: all .4s ease-out 0s;
 	filter: grayscale(100%); /* Current draft standard */
     -webkit-filter: grayscale(100%); /* New WebKit */
     -moz-filter: grayscale(100%);
@@ -103,10 +121,10 @@ nav ul li a.active, #mobile-menu ul li a.active {
 nav ul li a:active, nav ul li a:visited, nav ul li a:link,
 #mobile-menu ul li a,#mobile-menu ul li a:active, #mobile-menu ul li a:active, #mobile-menu ul  li a:active{
 	color:#333;
-	-webkit-transition: all .4s ease-out 0.1s;
-	-moz-transition: all .4s ease-out 0.1s;
-	-o-transition: all .4s ease-out 0.1s;
-	transition: all .4s ease-out 0.1s;
+	-webkit-transition: all .4s ease-out 0s;
+	-moz-transition: all .4s ease-out 0s;
+	-o-transition: all .4s ease-out 0s;
+	transition: all .4s ease-out 0s;
 }
 nav ul li a:hover,#mobile-menu ul li a:hover {
 	background:#fff;
@@ -118,15 +136,18 @@ nav ul li a:hover,#mobile-menu ul li a:hover {
 	right:0;
 	top:0;
 	bottom:0;
-	width:250px;
+	width:260px;
 	background: #eee;
 	z-index: 9999999;
 	overflow:auto;
+	transition: -webkit-transform 0.3s;
 	transition: transform 0.3s;
-	transform:translateX(250px);
+	transform:translateX(260px);
+	-webkit-transform:translateX(260px);
 }
 #mobile-menu.menu-open {
 	transform:translateX(0px);
+	-webkit-transform:translateX(0px);
 }
 
 #mobile-menu ul li a {
@@ -134,13 +155,20 @@ nav ul li a:hover,#mobile-menu ul li a:hover {
 	padding:20px;
 	border-bottom: 1px solid white;
 	margin:0;
+
 }
 #mobile-menu ul li {
 	margin:0;
 }
-#close-x {
+ul li#close-x a{
 	cursor: pointer;
 	text-align: center;
+	font-weight: bold;
+	color:#002795;
+}
+ul li#close-x a:hover {
+	background:#444;
+	color:#fefefe;
 }
 
 img.logo {
@@ -184,21 +212,18 @@ main {
 	background-position: 50% 50%;
 	height:100%;
 	width: 100%;
-	-webkit-transition: all .4s ease-out 0s;
-	-moz-transition: all .4s ease-out 0s;
-	-o-transition: all .4s ease-out 0s;
-	transition: all .4s ease-out 0s;
+	overflow: hidden;
 }
 
-.project1 {	background-image:url(../images/projekte/1.jpg);}
-.project2 {	background-image:url(../images/projekte/2.jpg);}
-.project3 {	background-image:url(../images/projekte/3.jpg);}
-.project4 {	background-image:url(../images/projekte/4.jpg);}
+.project1 {	background-image:url(../images/projekte_home/1.jpg);}
+.project2 {	background-image:url(../images/projekte_home/2.jpg);}
+.project3 {	background-image:url(../images/projekte_home/3.jpg);}
+.project4 {	background-image:url(../images/projekte_home/4.jpg);}
 
 .project-image-container p {
 	opacity: 1;
 	position: absolute;
-	bottom:8px;
+	bottom:-54px;
 	left:8px;
 	right:8px;
 	margin:0;
@@ -210,9 +235,8 @@ main {
 	-o-transition: all .4s ease-out 0s;
 	transition: all .4s ease-out 0s;
 }
-.project-image-container p:hover, .projectx:hover > p{
-	opacity: 0;
-
+.projectx:hover > p{
+	bottom:8px;
 }
 .projectx:hover {
 	background-position: 50% 40%;
@@ -403,9 +427,13 @@ ul.onlymobile.menu-bar li {
 		left: 10%;
 	}
 	.notmobile690 {display: none}
+	.gallery li {
+		width:47.5%;
+	}
 }
 
 @media (max-width: 399px) {
+
 	img.logo {
 		left: 10px;
 	}
@@ -415,13 +443,21 @@ ul.onlymobile.menu-bar li {
 	.notmobile400 {display: none}
 
 }
-@media (max-width: 550px) {
+@media (max-width: 549px) {
 	img.logo {
 		left: 7%;
 	}
 	ul.menu-bar li a {
 		margin-right:7%;
 	}
+	.gallery li {
+		width:100% !important;
+		margin:0 0 20px;
+	}
+	.gallery {
+		margin-left:0;
+	}
+	ul {margin-left:0;}
 }
 @media (max-height: 430px ) {
 	main {

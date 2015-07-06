@@ -3,7 +3,7 @@
 	<!-- Slidebar -->
     <div id="mobile-menu" class="boxshadow onlymobile">
     	<ul>
-    		<li id="close-x"><a>X</a></li>
+    		<li id="close-x"><a class="fa fa-times"></a></li>
     		<?php include("include/nav.php"); ?>
     	</ul>
     </div>
