@@ -11,9 +11,17 @@
 			<div class="row">
 				<div class="column">
 					<h4 class="headline">Projekte</h4>
-				
 				</div>
 			</div>
+			<ul class="gallery">
+				<li><img class="greyscale" src="images/projekte/Gastronomie/1.jpg" alt=""></li>
+				<li><img class="greyscale"  src="images/projekte/Gastronomie/1.jpg" alt=""></li>
+				<li><img class="greyscale"  src="images/projekte/Gastronomie/1.jpg" alt=""></li>
+				<li><img class="greyscale"  src="images/projekte/Gastronomie/1.jpg" alt=""></li>
+				<li><img class="greyscale"  src="images/projekte/Gastronomie/1.jpg" alt=""></li>
+				<li><img class="greyscale"  src="images/projekte/Gastronomie/1.jpg" alt=""></li>
+				<li><img class="greyscale"  src="images/projekte/Gastronomie/1.jpg" alt=""></li>
+			</ul>
 		</div>
 	</main>
 
