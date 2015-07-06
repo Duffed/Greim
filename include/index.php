@@ -103,17 +103,17 @@
 			<div class="row">
 				<div class="six columns">
 					<div class="project-image-container ">
-						<div class="projectx project1">
-							<p>Text der im Bild steht</p>
-						</div>
+						<figure class="project1">
+							<figcaption >Text der im Bild steht</figcaption >
+						</figure>
 					</div>
 					<p>Beispieltext über Projekt 1: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, est possimus ex ipsum dolore minus id molestiae nisi, a quod deleniti in repudiandae, nihil, totam unde ipsa facere odio iusto.</p>
 				</div>
 				<div class="six columns">
 					<div class="project-image-container">
-						<div class="projectx project2">
-							<p>Text der im Bild steht</p>
-						</div>
+						<figure class="project2">
+							<figcaption >Text der im Bild steht</figcaption >
+						</figure>
 					</div>
 					<p>Beispieltext über Projekt 2: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, distinctio, totam nobis recusandae labore tempore reprehenderit, at quisquam nemo sed iure ducimus iusto magnam eaque, dolorem aspernatur minima esse odio.</p>
 				</div>
@@ -122,17 +122,17 @@
 			<div class="row">
 				<div class="six columns">
 					<div class="project-image-container ">
-						<div class="projectx project3">
-							<p>Text der im Bild steht</p>
-						</div>
+						<figure class="project3">
+							<figcaption >Text der im Bild steht</figcaption >
+						</figure>
 					</div>
 					<p>Beispieltext über Projekt 2: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, distinctio, totam nobis recusandae labore tempore reprehenderit, at quisquam nemo sed iure ducimus iusto magnam eaque, dolorem aspernatur minima esse odio.</p>
 				</div>
 				<div class="six columns">
 					<div class="project-image-container ">
-						<div class="projectx project4">
-							<p>Text der im Bild steht</p>
-						</div>
+						<figure class="project4">
+							<figcaption >Text der im Bild steht</figcaption >
+						</figure>
 					</div>
 					<p>Beispieltext über Projekt 1: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, est possimus ex ipsum dolore minus id molestiae nisi, a quod deleniti in repudiandae, nihil, totam unde ipsa facere odio iusto.</p>
 				</div>

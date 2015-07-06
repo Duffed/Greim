@@ -14,13 +14,13 @@
 				</div>
 			</div>
 			<ul class="gallery">
-				<li><img class="greyscale" src="images/projekte/Gastronomie/1.jpg" alt=""></li>
-				<li><img class="greyscale"  src="images/projekte/Gastronomie/1.jpg" alt=""></li>
-				<li><img class="greyscale"  src="images/projekte/Gastronomie/1.jpg" alt=""></li>
-				<li><img class="greyscale"  src="images/projekte/Gastronomie/1.jpg" alt=""></li>
-				<li><img class="greyscale"  src="images/projekte/Gastronomie/1.jpg" alt=""></li>
-				<li><img class="greyscale"  src="images/projekte/Gastronomie/1.jpg" alt=""></li>
-				<li><img class="greyscale"  src="images/projekte/Gastronomie/1.jpg" alt=""></li>
+				<li><img class="grayscale" src="images/projekte/Gastronomie/1.jpg" alt=""></li>
+				<li><img class="grayscale" src="images/projekte/Gastronomie/1.jpg" alt=""></li>
+				<li><img class="grayscale" src="images/projekte/Gastronomie/1.jpg" alt=""></li>
+				<li><img class="grayscale" src="images/projekte/Gastronomie/1.jpg" alt=""></li>
+				<li><img class="grayscale" src="images/projekte/Gastronomie/1.jpg" alt=""></li>
+				<li><img class="grayscale" src="images/projekte/Gastronomie/1.jpg" alt=""></li>
+				<li><img class="grayscale" src="images/projekte/Gastronomie/1.jpg" alt=""></li>
 			</ul>
 		</div>
 	</main>

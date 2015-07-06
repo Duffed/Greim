@@ -22,7 +22,7 @@
 	<div id="hero">
 		<div class="boxshadow" id="hero_inner"> <!--data-parallax="scroll" data-naturalWidth="1920" data-image-src="images/az3.jpg" -->
 			<div class="container fullheight">	
-				<img class="hero-text notmobile400" src="images/logo2_trans_b.png" alt="Greim Architekten" >
+				<img class="hero-text" src="images/logo2_trans_b.png" alt="Greim Architekten" >
 			</div>
 		</div>
 	</div>
