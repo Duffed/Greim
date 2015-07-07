@@ -50,17 +50,29 @@
 					<p>Beispieltext &uuml;ber Projekt 1: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, est possimus ex ipsum dolore minus id molestiae nisi, a quod deleniti in repudiandae, nihil, totam unde ipsa facere odio iusto.</p>
 				</div>
 			</div>
+
+			<div class="row">
+				<div class="column more-button">
+					<a href="projekte.php">MEHR</a>
+				</div>
+			</div>
 		</div>
 		
 		<div id="team-hero">
 			<h2>Team</h2>
 		</div>
-		<div class="container">
+		<div class="container paddingbottom">
 			<div class="row">
 				<div class="column">
 					<p>Text &uuml;ber Team <br>
 					Zeile <br>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et odit aperiam alias fugiat tempora id, consectetur atque repudiandae laborum culpa. Soluta iusto ratione, veniam sit. Eaque dolor, inventore nostrum consectetur.</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="column more-button">
+					<a href="team.php">MEHR</a>
 				</div>
 			</div>
 		</div>
