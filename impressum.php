@@ -1,15 +1,10 @@
 <?php include("include/head.php") ?>
 <?php include("include/header.php") ?>
 	<main class="boxshadow">
-		<div class="container">
-			<div class="row">
-				<div class="column">
-					<h4 class="headline">Impressum</h4>
-				</div>
-			</div>
+		<section class="container">
+			<h4 class="headline">Impressum</h4>
 
-			<div class="row">
-				<div class="column">
+			<article class="row">
 					<h5>Verantwortlich f&uuml;r den Inhalt dieser Webseite: </h5>
 					<p>Max Mustermann <br>
 					Beispielweg 99  <br>
@@ -31,8 +26,7 @@ Der Autor erkl&auml;rt hiermit ausdr&uuml;cklich, dass zum Zeitpunkt der Linkset
 Alle innerhalb des Internetangebotes genannten und ggf. durch Dritte gesch&uuml;tzten Marken- und Warenzeichen unterliegen uneingeschr&auml;nkt den Bestimmungen des jeweils g&uuml;ltigen Kennzeichenrechts und den Besitzrechten der jeweiligen eingetragenen Eigent&uuml;mer. Allein aufgrund der blo&szlig;en Nennung ist nicht der Schluss zu ziehen, dass Markenzeichen nicht durch Rechte Dritter gesch&uuml;tzt sind! 
 Das Copyright f&uuml;r ver&ouml;ffentlichte, vom Autor selbst erstellte Objekte bleibt allein beim Autor der Seiten. Eine Vervielf&auml;ltigung oder Verwendung solcher Grafiken, Tondokumente, Videosequenzen und Texte in anderen elektronischen oder gedruckten Publikationen ist ohne ausdr&uuml;ckliche Zustimmung des Autors nicht gestattet. </p>
 
-				</div>
-			</div>
-		</div>
+			</article>
+		</section>
 	</main>
 <?php include("include/footer.php") ?>

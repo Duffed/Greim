@@ -7,13 +7,11 @@
 <?php include("include/header.php") ?>
 
 	<main class="boxshadow">
-		<div class="container">
-			<div class="row">
-				<div class="column">
-					<h4 class="headline">Karl-Heinz Greim</h4>
-				</div>
-			</div>
-			<div class="row paddingbottom">
+		<section class="container">
+
+			<h4 class="headline">Karl-Heinz Greim</h4>
+
+			<section class="row paddingbottom">
 				<div class="four columns">
 					<img src="images/herrgreim.jpg" class="grayscale" id="herrgreim" alt="">
 				</div>
@@ -65,8 +63,8 @@
 						</tbody>
 					</table>
 				</div>
-			</div>
-		</div>
+			</section>
+		</section>
 	</main>
 
 <?php include("include/footer.php") ?>

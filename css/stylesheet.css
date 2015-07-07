@@ -70,11 +70,11 @@ a {
 }
 
 /* Header & Index */
-nav:hover {
+nav#navigation:hover {
 	background: rgba(238, 238, 238, 1);
 }
 
-nav {
+nav#navigation {
 	position: fixed;
 	top:0px;
 	left:0px;
@@ -93,34 +93,34 @@ nav {
 	transition: all .4s ease 0s;
 }
 
-nav.nav_waypoint {
+nav#navigation.nav_waypoint {
 	height:40px;
 	line-height: 39px;
 	background: rgba(238, 238, 238, 1);
 }
 
-nav ul, #mobile-menu ul {
+nav#navigation ul, #mobile-menu ul {
 	list-style-type: none;
 	margin:0;
 }
 
-nav ul li {
+nav#navigation ul li {
 	display: inline-block;
 	text-align: center;
 	margin: 0;
 }
-nav ul li a {
+nav#navigation ul li a {
 	padding:0px 15px;
 	display: block;
 	text-align: center;
 }
-nav ul li a.active, #mobile-menu ul li a.active {
+nav#navigation ul li a.active, #mobile-menu ul li a.active {
 	font-weight: bold;
 }
 #mobile-menu ul li a.active {
 	background:#fff;
 }
-nav ul li a:active, nav ul li a:visited, nav ul li a:link,
+nav#navigation ul li a:active, nav#navigation ul li a:visited, nav#navigation ul li a:link,
 #mobile-menu ul li a,#mobile-menu ul li a:active, #mobile-menu ul li a:active, #mobile-menu ul  li a:active{
 	color:#333;
 	-webkit-transition: all .4s ease-out 0s;
@@ -128,7 +128,7 @@ nav ul li a:active, nav ul li a:visited, nav ul li a:link,
 	-o-transition: all .4s ease-out 0s;
 	transition: all .4s ease-out 0s;
 }
-nav ul li a:hover,#mobile-menu ul li a:hover {
+nav#navigation ul li a:hover,#mobile-menu ul li a:hover {
 	background:#fff;
 }
 
@@ -144,8 +144,8 @@ nav ul li a:hover,#mobile-menu ul li a:hover {
 	overflow:auto;
 	transition: -webkit-transform 0.3s;
 	transition: transform 0.3s;
-	transform:translateX(260px);
-	-webkit-transform:translateX(260px);
+	transform:translateX(265px);
+	-webkit-transform:translateX(265px);
 }
 #mobile-menu.menu-open {
 	transform:translateX(0px);
@@ -173,6 +173,38 @@ ul li#close-x a:hover {
 	color:#fefefe;
 }
 
+nav#navigation div.menu-bar a {
+	display: block;
+	height:100%;
+	line-height: 100%
+}
+nav#navigation div.menu-bar a:before {
+	display: inline-block;
+	position: absolute;
+	height:1.5rem;
+	top:50%;
+	font-size: 1.75rem;
+	margin-top:-0.75rem;
+}
+
+nav#navigation div.menu-bar, ul.menu-bar a {
+	background: none;
+	height:100%;
+	line-height: 100%;
+	text-align: right;
+}
+nav#navigation div.menu-bar a.fa-bars {
+	margin-right:10%;
+}	
+nav#navigation div.menu-bar a, div.menu-bar a:hover{
+	background:none;
+	color:#333;
+}
+
+nav#navigation div.menu-bar {
+	cursor: pointer;
+}
+
 img.logo {
 	position: absolute;
 	left:0;
@@ -180,24 +212,14 @@ img.logo {
 	height:100%;
 }
 
-img.hero-text { /*Logo im hero */
-	position: absolute;
-	left:50%;
-	top:25vh;
-	margin-bottom:-54px;
-	margin-left:-319px;
-	background:rgba(240,240,240,0);
-	padding:10px 200px;
-}
-
 main {
 	position: relative;
-	margin-top:60vh;
+	margin-top:450px;
 	width: 100%;
 	background: white;
 	z-index: 1;
 	min-height: 200px;
-	padding-top:2em;
+	padding:3rem 0;
 }
 
 .project-image-container {
@@ -273,9 +295,7 @@ figure:hover {
 	background-position: 50% 40%;
 }
 
-
-
-#hero {
+header {
 	background:url(../images/az3.jpg);
 	position: fixed;
 	background-position: 50% 50%;
@@ -284,20 +304,30 @@ figure:hover {
 	top:0px;
 	left:0px;
 	width:100%;
-	height:60vh;
+	height:450px;
 	z-index: -100;
+}
+
+img.hero-text { /*Logo im hero */
+	position: absolute;
+	left:50%;
+	top:50%;
+	margin-top:-54px;
+	margin-left:-319px;
+	background:rgba(240,240,240,0);
+	padding:10px 200px;
 }
 
 #team-hero {
 	position: relative;
-	height:60vh;
+	height:450px;
 	width: 100%;
 	background:url(../images/1.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position: 50% 0;
-	margin:2.5rem 0;
+	margin:3rem 0;
 	box-shadow: inset 0px 0px 4px #555;
 }
 #team-hero h2 {
@@ -310,28 +340,28 @@ figure:hover {
 	width:100%;
 	height:100px;
 	margin-top:-50px;
-	line-height: 100px;
+	line-height:100px;
 }
-div.more-button {
-	text-align: center;
-	margin:3.5rem 0;
-}
-div.more-button a {
+
+.more-button {
 	-webkit-transition: all .4s ease-out 0s;
 	-moz-transition: all .4s ease-out 0s;
 	-o-transition: all .4s ease-out 0s;
 	transition: all .4s ease-out 0s;
+	display: inline-block;
 	padding:1.5rem 5rem;
 	border:1px solid black;
-	background:rgba(0,0,0,0.65);
+	background:rgba(55,55,55,0.65);
 	color:white;
-	letter-spacing: 5px
+	position: relative;
+	letter-spacing: 5px;
+	margin:2.5rem auto 0 auto;
 }
-div.more-button a:hover {
+
+.more-button:hover {
 	border:1px solid black;
 	background:rgba(233,233,233,.65);
 	color:black;
-
 }
 /* Footer */
 footer {
@@ -360,12 +390,12 @@ footer img {
 	margin-right:3rem;
 	margin-top:10px;
 }
-div.footer-c {
+.footer-c {
 	height:24px;
 	background:#101010;
 
 }
-div.footer-c p {
+.footer-c p {
 	font-size: 1rem;
 	line-height: 24px;
 	color:#666;
@@ -392,38 +422,16 @@ div.footer-c p {
 	margin: 0 0 0px;
 }
 
-a.menu-bar {
-	display: block;
-	height:100%;
-}
-
-ul.menu-bar, ul.menu-bar li {
-	background: none;
-	height:100%;
-	text-align: right;
-}
-ul.menu-bar li a {
-	margin-right:10%;
-}
-ul.menu-bar li a, ul.menu-bar li a:hover{
-	background:none;
-	color:#333;
-}
-
-ul.onlymobile.menu-bar li {
-	cursor: pointer;
-}
-
 /* Kontakt */
 #intro_kontaktformular {
 	text-align: center;
 	cursor: pointer;
-	margin:3.5rem 0;
+	margin:3rem 0;
 }
 #intro_kontaktformular:hover > hr {
 	border-color:#002795;
 }
-#intro_kontaktformular hr, #intro_kontaktformular p {
+#intro_kontaktformular hr, #intro_kontaktformular h2 {
 	margin:0;
 	-webkit-transition: all .4s ease-out 0.1s;
 	-moz-transition: all .4s ease-out 0.1s;
@@ -458,15 +466,15 @@ tr th {
 	.onlymobile {display:block;}
 	.notmobile {display: none}
 
-	nav ul li {
+	nav#navigation ul li {
 		display: block;
 	}
 
-	nav ul li a {
+	nav#navigation ul li a {
 		margin: 0;
 	}
 	img.logo {
-		left: 10%;
+		left: 7.5%;
 	}
 	.notmobile690 {display: none}
 	.gallery li {
@@ -476,9 +484,7 @@ tr th {
 
 @media (max-width: 399px) {
 
-	img.logo {
-		left: 10px;
-	}
+
 	ul.menu-bar li a {
 		margin-right:10px;
 	}
@@ -487,7 +493,7 @@ tr th {
 }
 @media (max-width: 549px) {
 	img.logo {
-		left: 7%;
+		left: 20px;
 	}
 	ul.menu-bar li a {
 		margin-right:7%;
@@ -502,17 +508,19 @@ tr th {
 	ul {margin-left:0;}
 }
 @media (max-height: 430px ) {
-	main {
-		margin-top: 85vh;
-	}
 
-	#hero,
-	#team-hero {
-		height:85vh;	
-	} 
 	
 }
-@media (max-height: 260px ) {
+@media (max-height: 700px) {
+
+	#team-hero,	header {
+		height:250px;
+	}
+	main {
+		margin-top:250px;
+	}
+}
+@media (max-height: 350px ) {
 	.hero-text {
 		display: none;
 	}

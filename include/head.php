@@ -11,13 +11,13 @@
 
 		<!-- Mobile Specific Metas
 		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<!-- FONT
 		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-		<!--
-			<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-		-->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+		<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+		
 		<!-- CSS
 		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 		<link rel="stylesheet" href="css/normalize.css">
@@ -58,7 +58,7 @@
 				function closemenu() {
 					$("#mobile-menu").removeClass("menu-open");
 				}
-				$("ul.onlymobile").click(function(e) {
+				$("div.onlymobile").click(function(e) {
 					e.stopPropagation();
 					if ($("#mobile-menu").hasClass("menu-open")){
 						closemenu();

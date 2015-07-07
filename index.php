@@ -6,75 +6,66 @@
 </script>
 <?php include("include/header.php") ?>
 	<main class="boxshadow">
-		<div class="container">
+		<section class="container">
 			<div class="row">
 				<div class="column">
 					<h4 class="headline">Projekte</h4>
 				</div>
 			</div>
 
-			<div class="row">
-				<div class="six columns">
-					<div class="project-image-container ">
+			<section class="row">
+				<arcticle class="six columns">
+					<section class="project-image-container ">
 						<figure class="grayscale project1">
 							<figcaption >Text der im Bild steht</figcaption >
 						</figure>
-					</div>
+					</section>
 					<p>Beispieltext &uuml;ber Projekt 1: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, est possimus ex ipsum dolore minus id molestiae nisi, a quod deleniti in repudiandae, nihil, totam unde ipsa facere odio iusto.</p>
-				</div>
-				<div class="six columns">
-					<div class="project-image-container">
+				</arcticle>
+				<article class="six columns">
+					<section class="project-image-container">
 						<figure class="grayscale project2">
 							<figcaption>Text der im Bild steht</figcaption >
 						</figure>
-					</div>
+					</section>
 					<p>Beispieltext &uuml;ber Projekt 2: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, distinctio, totam nobis recusandae labore tempore reprehenderit, at quisquam nemo sed iure ducimus iusto magnam eaque, dolorem aspernatur minima esse odio.</p>
-				</div>
-			</div>
+				</article>
+			</section>
 
-			<div class="row">
-				<div class="six columns">
-					<div class="project-image-container ">
+			<section class="row">
+				<article class="six columns">
+					<section class="project-image-container ">
 						<figure class="grayscale project3">
 							<figcaption >Text der im Bild steht</figcaption >
 						</figure>
-					</div>
+					</section>
 					<p>Beispieltext &uuml;ber Projekt 2: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, distinctio, totam nobis recusandae labore tempore reprehenderit, at quisquam nemo sed iure ducimus iusto magnam eaque, dolorem aspernatur minima esse odio.</p>
-				</div>
-				<div class="six columns">
-					<div class="project-image-container ">
+				</article>
+				<article class="six columns">
+					<section class="project-image-container ">
 						<figure class="grayscale project4">
-							<figcaption >Text der im Bild steht</figcaption >
+							<figcaption >Text der im Bild steht</figcaption>
 						</figure>
-					</div>
+					</section>
 					<p>Beispieltext &uuml;ber Projekt 1: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, est possimus ex ipsum dolore minus id molestiae nisi, a quod deleniti in repudiandae, nihil, totam unde ipsa facere odio iusto.</p>
-				</div>
-			</div>
+				</article>
+			</section>
 
-			<div class="row">
-				<div class="column more-button">
-					<a href="projekte.php">MEHR</a>
-				</div>
-			</div>
-		</div>
+			<a class="more-button" href="projekte.php">MEHR</a>
+		</section>
 		
-		<div id="team-hero">
+		<section id="team-hero">
 			<h2>Team</h2>
-		</div>
-		<div class="container paddingbottom">
-			<div class="row">
-				<div class="column">
-					<p>Text &uuml;ber Team <br>
-					Zeile <br>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et odit aperiam alias fugiat tempora id, consectetur atque repudiandae laborum culpa. Soluta iusto ratione, veniam sit. Eaque dolor, inventore nostrum consectetur.</p>
-				</div>
-			</div>
+		</section>
 
-			<div class="row">
-				<div class="column more-button">
-					<a href="team.php">MEHR</a>
-				</div>
-			</div>
-		</div>
+		<section class="container">
+			<article class="row">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis dolore quod, incidunt impedit aliquam, eaque deserunt, beatae quos vitae, nobis cum sint qui rem optio quam porro accusamus nihil quo! <br>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis repudiandae error culpa, cum adipisci tempore soluta. Minus molestias dicta neque, doloribus nemo pariatur earum nobis suscipit, molestiae praesentium ex, voluptate!<br>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et odit aperiam alias fugiat tempora id, consectetur atque repudiandae laborum culpa. Soluta iusto ratione, veniam sit. Eaque dolor, inventore nostrum consectetur.</p>
+			</article>
+
+			<a class="more-button" href="team.php">MEHR</a>
+		</section>
 	</main>
 <?php include("include/footer.php") ?>
