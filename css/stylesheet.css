@@ -51,6 +51,13 @@ a {
 .fullheight {
 	height:100%;
 }
+
+figure {
+	display: inline-block;
+	margin:0;
+	padding:0;
+}
+
 #scrolltotop {
 	display: none;
 	cursor: pointer;
@@ -123,10 +130,10 @@ nav#navigation ul li a.active, #mobile-menu ul li a.active {
 nav#navigation ul li a:active, nav#navigation ul li a:visited, nav#navigation ul li a:link,
 #mobile-menu ul li a,#mobile-menu ul li a:active, #mobile-menu ul li a:active, #mobile-menu ul  li a:active{
 	color:#333;
-	-webkit-transition: all .4s ease-out 0s;
-	-moz-transition: all .4s ease-out 0s;
-	-o-transition: all .4s ease-out 0s;
-	transition: all .4s ease-out 0s;
+	-webkit-transition: background .4s ease-out 0s;
+	-moz-transition: background .4s ease-out 0s;
+	-o-transition: background .4s ease-out 0s;
+	transition: background .4s ease-out 0s;
 }
 nav#navigation ul li a:hover,#mobile-menu ul li a:hover {
 	background:#fff;
@@ -173,43 +180,39 @@ ul li#close-x a:hover {
 	color:#fefefe;
 }
 
-nav#navigation div.menu-bar a {
-	display: block;
-	height:100%;
-	line-height: 100%
-}
-nav#navigation div.menu-bar a:before {
-	display: inline-block;
+nav#navigation section.menu-bar a.fa {
 	position: absolute;
-	height:1.5rem;
-	top:50%;
-	font-size: 1.75rem;
-	margin-top:-0.75rem;
-}
-
-nav#navigation div.menu-bar, ul.menu-bar a {
-	background: none;
 	height:100%;
-	line-height: 100%;
-	text-align: right;
-}
-nav#navigation div.menu-bar a.fa-bars {
-	margin-right:10%;
-}	
-nav#navigation div.menu-bar a, div.menu-bar a:hover{
-	background:none;
-	color:#333;
-}
-
-nav#navigation div.menu-bar {
+	right:0px;
+	width:200px;
 	cursor: pointer;
 }
-
 img.logo {
 	position: absolute;
 	left:0;
 	top:0;
 	height:100%;
+}
+nav#navigation section.menu-bar a.fa:before {
+	display: inline-block;
+	position: absolute;
+	height:1.5rem;
+	top:50%;
+	right:17%;
+	font-size: 1.75rem;
+	margin-top:-0.75rem;
+}
+
+nav#navigation section.menu-bar, ul.menu-bar a {
+	background: none;
+	height:100%;
+	line-height: 100%;
+	text-align: right;
+}
+
+nav#navigation section.menu-bar a, section.menu-bar a:hover{
+	background:none;
+	color:#333;
 }
 
 main {
@@ -229,7 +232,7 @@ main {
 	padding:8px;
 	margin-bottom: 1rem;
 }
-figure {
+figure.projectx {
 	position: relative;
 	background-size: cover;
 	background-position: 50% 50%;
@@ -239,7 +242,7 @@ figure {
 	padding:0;
 	overflow: hidden;
 }
-figure:before, #herrgreim:before {
+figure.projectx:before{
 	font-family: 'FontAwesome';
 	src: url('../fonts/fontawesome-webfont.eot?v=4.3.0');
 	src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.3.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.3.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.3.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.3.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular') format('svg');
@@ -280,18 +283,18 @@ figcaption {
 	padding:1.5rem;
 	background:rgba(0,0,0,0.6);
 	color:white;
-	-webkit-transition: all .4s ease-out 0s;
-	-moz-transition: all .4s ease-out 0s;
-	-o-transition: all .4s ease-out 0s;
-	transition: all .4s ease-out 0s;
+	-webkit-transition: bottom .4s ease-out 0s;
+	-moz-transition: bottom .4s ease-out 0s;
+	-o-transition: bottom .4s ease-out 0s;
+	transition: bottom .4s ease-out 0s;
 }
-figure:hover figcaption{
+figure.projectx:hover figcaption{
 	bottom:0px;
 }
-figure:hover:before{
+figure.projectx:hover:before{
 	opacity: 0;
 }
-figure:hover {
+figure.projectx:hover {
 	background-position: 50% 40%;
 }
 
@@ -342,23 +345,25 @@ img.hero-text { /*Logo im hero */
 	margin-top:-50px;
 	line-height:100px;
 }
-
 .more-button {
-	-webkit-transition: all .4s ease-out 0s;
-	-moz-transition: all .4s ease-out 0s;
-	-o-transition: all .4s ease-out 0s;
-	transition: all .4s ease-out 0s;
-	display: inline-block;
+	text-align: center;
+	margin:2.5rem auto 0 auto;
+}
+.more-button a{
+	-webkit-transition: background .4s ease-out 0s;
+	-moz-transition: background .4s ease-out 0s;
+	-o-transition: background .4s ease-out 0s;
+	transition: background .4s ease-out 0s;
 	padding:1.5rem 5rem;
+	display: inline-block;
 	border:1px solid black;
 	background:rgba(55,55,55,0.65);
 	color:white;
-	position: relative;
 	letter-spacing: 5px;
-	margin:2.5rem auto 0 auto;
+	
 }
 
-.more-button:hover {
+.more-button a:hover {
 	border:1px solid black;
 	background:rgba(233,233,233,.65);
 	color:black;
@@ -433,10 +438,10 @@ footer img {
 }
 #intro_kontaktformular hr, #intro_kontaktformular h2 {
 	margin:0;
-	-webkit-transition: all .4s ease-out 0.1s;
-	-moz-transition: all .4s ease-out 0.1s;
-	-o-transition: all .4s ease-out 0.1s;
-	transition: all .4s ease-out 0.1s;
+	-webkit-transition: border .4s ease-out 0.1s;
+	-moz-transition: border .4s ease-out 0.1s;
+	-o-transition: border .4s ease-out 0.1s;
+	transition: border .4s ease-out 0.1s;
 }
 #intro_kontaktformular i {
 	color:#002795;
@@ -450,7 +455,7 @@ footer img {
 }
 
 /* Team */
-#herrgreim {
+#herrgreim img {
 	position: relative;
 	width:100%;
 	border: 1px solid darkgrey;
@@ -511,7 +516,7 @@ tr th {
 
 	
 }
-@media (max-height: 700px) {
+@media (max-height: 500px) {
 
 	#team-hero,	header {
 		height:250px;

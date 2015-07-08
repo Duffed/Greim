@@ -7,12 +7,8 @@
 <?php include("include/header.php") ?>
 
 	<main class="boxshadow">
-		<div class="container">
-			<div class="row">
-				<div class="column">
-					<h4 class="headline">Projekte</h4>
-				</div>
-			</div>
+		<article class="container">
+			<h4 class="headline">Projekte</h4>
 			<ul class="gallery">
 				<li><img class="grayscale" src="images/projekte/Gastronomie/1.jpg" alt=""></li>
 				<li><img class="grayscale" src="images/projekte/Gastronomie/1.jpg" alt=""></li>
@@ -22,7 +18,7 @@
 				<li><img class="grayscale" src="images/projekte/Gastronomie/1.jpg" alt=""></li>
 				<li><img class="grayscale" src="images/projekte/Gastronomie/1.jpg" alt=""></li>
 			</ul>
-		</div>
+		</article>
 	</main>
 
 <?php include("include/footer.php") ?>

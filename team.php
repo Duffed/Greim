@@ -11,11 +11,11 @@
 
 			<h4 class="headline">Karl-Heinz Greim</h4>
 
-			<section class="row paddingbottom">
-				<div class="four columns">
-					<img src="images/herrgreim.jpg" class="grayscale" id="herrgreim" alt="">
-				</div>
-				<div class="eight columns">
+			<article class="row paddingbottom">
+				<figure id="herrgreim" class="four columns">
+					<img src="images/herrgreim.jpg" class="grayscale" alt="Herr Greim">
+				</figure>
+				<section class="eight columns">
 					<table class="u-full-width">
 						<thead>
 							<tr>
@@ -62,7 +62,7 @@
 							</tr>
 						</tbody>
 					</table>
-				</div>
+				</article>
 			</section>
 		</section>
 	</main>

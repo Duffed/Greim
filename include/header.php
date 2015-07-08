@@ -13,17 +13,16 @@
     </nav>
 
 	<nav id="navigation">
-		<div class="onlymobile menu-bar">
+		<section class="onlymobile menu-bar">
 			<a class="fa fa-bars"></a>
 			<a href="index.php"><img src="images/greim.png" class="logo" alt="Greim"></a>
-		</div>
+		</section>
 		
-		<div class="container">
-
+		<section class="container">
 			<ul class="menu notmobile">
 				<?php include("include/nav.php"); ?>
 			</ul>
 			<a href="index.php"><img src="images/greim.png" class="logo" alt="Greim"></a>
-		</div>
+		</section>
 
 	</nav>

@@ -58,7 +58,7 @@
 				function closemenu() {
 					$("#mobile-menu").removeClass("menu-open");
 				}
-				$("div.onlymobile").click(function(e) {
+				$("a.fa-bars").click(function(e) {
 					e.stopPropagation();
 					if ($("#mobile-menu").hasClass("menu-open")){
 						closemenu();
