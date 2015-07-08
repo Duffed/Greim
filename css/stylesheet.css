@@ -1,4 +1,4 @@
-/* #002795 */
+/* #ca0808 */
 @charset "utf-8";
 * { box-sizing: border-box;}
 *,
@@ -173,7 +173,7 @@ ul li#close-x a{
 	cursor: pointer;
 	text-align: center;
 	font-weight: bold;
-	text-shadow:1px 1px 1px #fff, 0 0 0 #000, 1px 1px 1px #fff;
+	color:#ca0808;
 }
 ul li#close-x a:hover {
 	background:#444;
@@ -360,13 +360,12 @@ img.hero-text { /*Logo im hero */
 	background:rgba(55,55,55,0.65);
 	color:white;
 	letter-spacing: 5px;
-	
 }
 
 .more-button a:hover {
 	border:1px solid black;
 	background:rgba(233,233,233,.65);
-	color:black;
+	color:#ca0808;
 }
 /* Footer */
 footer {
@@ -434,7 +433,7 @@ footer img {
 	margin:3rem 0;
 }
 #intro_kontaktformular:hover > hr {
-	border-color:#002795;
+	border-color:#ca0808;
 }
 #intro_kontaktformular hr, #intro_kontaktformular h2 {
 	margin:0;
@@ -444,7 +443,7 @@ footer img {
 	transition: border .4s ease-out 0.1s;
 }
 #intro_kontaktformular i {
-	color:#002795;
+	color:#ca0808;
 }
 #kontaktformular {
 	display:none;
