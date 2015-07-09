@@ -43,12 +43,6 @@
 					offset: "60px"
 				})
 
-				//Onclick Nav Burger
-				//$("ul.menu-bar li").click(function() {
-					//$("nav div.container ul").stop().toggle("fade");
-				//	$("nav div.container ul").toggleClass("notmobile");
-				//})
-
 				$("#scrolltotop").click(function() {
 					$("html, body").animate({ scrollTop: 0 }, "fast");
 					return false;

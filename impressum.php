@@ -1,7 +1,11 @@
 <?php include("include/head.php") ?>
 <?php include("include/header.php") ?>
+	<header class="header-impressum">
+		<img class="hero-text" src="images/logo2_trans_b.png" alt="Greim Architekten" >
+	</header>
+
 	<main class="boxshadow">
-		<section class="container">
+		<article class="container">
 			<h4 class="headline">Impressum</h4>
 
 			<h5>Verantwortlich f&uuml;r den Inhalt dieser Webseite: </h5>
@@ -24,6 +28,6 @@ Der Autor erkl&auml;rt hiermit ausdr&uuml;cklich, dass zum Zeitpunkt der Linkset
 			<p>Der Autor ist bestrebt, in allen Publikationen die Urheberrechte der verwendeten Grafiken, Tondokumente, Videosequenzen und Texte zu beachten, von ihm selbst erstellte Grafiken, Tondokumente, Videosequenzen und Texte zu nutzen oder auf lizenzfreie Grafiken, Tondokumente, Videosequenzen und Texte zur&uuml;ckzugreifen. 
 Alle innerhalb des Internetangebotes genannten und ggf. durch Dritte gesch&uuml;tzten Marken- und Warenzeichen unterliegen uneingeschr&auml;nkt den Bestimmungen des jeweils g&uuml;ltigen Kennzeichenrechts und den Besitzrechten der jeweiligen eingetragenen Eigent&uuml;mer. Allein aufgrund der blo&szlig;en Nennung ist nicht der Schluss zu ziehen, dass Markenzeichen nicht durch Rechte Dritter gesch&uuml;tzt sind! 
 Das Copyright f&uuml;r ver&ouml;ffentlichte, vom Autor selbst erstellte Objekte bleibt allein beim Autor der Seiten. Eine Vervielf&auml;ltigung oder Verwendung solcher Grafiken, Tondokumente, Videosequenzen und Texte in anderen elektronischen oder gedruckten Publikationen ist ohne ausdr&uuml;ckliche Zustimmung des Autors nicht gestattet. </p>
-		</section>
+		</article>
 	</main>
 <?php include("include/footer.php") ?>

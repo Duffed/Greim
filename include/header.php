@@ -1,9 +1,5 @@
 </head>
 <body>
-	<header>
-		<img class="hero-text" src="images/logo2_trans_b.png" alt="Greim Architekten" >
-	</header>
-
 	<!-- Slidebar -->
     <nav id="mobile-menu" class="boxshadow onlymobile">
     	<ul>

@@ -5,8 +5,12 @@
 	});
 </script>
 <?php include("include/header.php") ?>
+	<header class="header-index">
+		<img class="hero-text" src="images/logo2_trans_b.png" alt="Greim Architekten" >
+	</header>
+
 	<main class="boxshadow">
-		<section class="container">
+		<div class="container">
 
 			<h4 class="headline">Projekte</h4>
 
@@ -51,11 +55,34 @@
 				<a href="projekte.php">MEHR</a>
 			</aside>
 			
-		</section>
+		</div>
+
+		<header class="hero" id="kontakt-hero">
+			<h2>Kontakt</h2>
+		</header>
+
+		<article class="container">
+			<h4 class="headline">Greim Architekten</h4>
+			<section class="row">
+				<div class="six columns">
+					<p>W&ouml;lfelstra&szlig;e 6 <br>
+					95444 Bayreuth</p>
+				</div>
+				<div class="six columns">
+					<p><b>Fon:</b> +49 921 76441-0 <br>
+					<b>Fax:</b> +49 921 76441-29 <br>
+					<b>Email:</b> info@greim-architekten.de</p>
+				</div>
+			</section>
+
+			<aside class="more-button">
+				<a class="more-button" href="kontakt.php">MEHR</a>
+			</aside>
+		</article>
 		
-		<section id="team-hero">
+		<header class="hero" id="team-hero">
 			<h2>Team</h2>
-		</section>
+		</header>
 
 		<article class="container">
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis dolore quod, incidunt impedit aliquam, eaque deserunt, beatae quos vitae, nobis cum sint qui rem optio quam porro accusamus nihil quo! <br>

@@ -66,14 +66,22 @@ figure {
 	z-index: 9999;
 	position: fixed;
 	padding:8px 11px;
-	opacity: 0.5;
 	background:#666;
 	bottom:50px;
 	right:50px;
-	color:#fff;
+	color: #FFF;
+	border:1px solid black;
+	opacity: 0.45;
+	background:rgb(55,55,55);
 }
 #scrolltotop:hover {
+	-webkit-transition: all .4s ease 0s;
+	-moz-transition: all .4s ease 0s;
+	-o-transition: all .4s ease 0s;
+	transition: all .4s ease 0s;
+	background-color:rgb(233,233,233);
 	opacity: 0.8;
+	color:#ca0808; 
 }
 
 /* Header & Index */
@@ -120,6 +128,7 @@ nav#navigation ul li a {
 	padding:0px 15px;
 	display: block;
 	text-align: center;
+	font-size: 1.6rem
 }
 nav#navigation ul li a.active, #mobile-menu ul li a.active {
 	font-weight: bold;
@@ -153,10 +162,13 @@ nav#navigation ul li a:hover,#mobile-menu ul li a:hover {
 	transition: transform 0.3s;
 	transform:translateX(265px);
 	-webkit-transform:translateX(265px);
+	box-shadow:none;
 }
 #mobile-menu.menu-open {
 	transform:translateX(0px);
 	-webkit-transform:translateX(0px);
+	box-shadow:0 0 800px 800px rgba(0,0,0,0.5);
+
 }
 
 #mobile-menu ul li a {
@@ -184,7 +196,7 @@ nav#navigation section.menu-bar a.fa {
 	position: absolute;
 	height:100%;
 	right:0px;
-	width:200px;
+	width:50%;
 	cursor: pointer;
 }
 img.logo {
@@ -198,7 +210,7 @@ nav#navigation section.menu-bar a.fa:before {
 	position: absolute;
 	height:1.5rem;
 	top:50%;
-	right:17%;
+	right:15%;
 	font-size: 1.75rem;
 	margin-top:-0.75rem;
 }
@@ -217,7 +229,7 @@ nav#navigation section.menu-bar a, section.menu-bar a:hover{
 
 main {
 	position: relative;
-	margin-top:450px;
+	margin-top:400px;
 	width: 100%;
 	background: white;
 	z-index: 1;
@@ -299,7 +311,6 @@ figure.projectx:hover {
 }
 
 header {
-	background:url(../images/az3.jpg);
 	position: fixed;
 	background-position: 50% 50%;
 	background-size: cover;
@@ -310,40 +321,55 @@ header {
 	height:450px;
 	z-index: -100;
 }
+.header-index {	background-image:url(../images/az3.jpg);}
+.header-team {	background-image:url(../images/az2.jpg);}
+.header-projekte {	background-image:url(../images/az1.jpg);}
+.header-unternehmen {	background-image:url(../images/az3.jpg);}
+.header-kontakt {	background-image:url(../images/az3.jpg);}
+.header-impressum {	background-image:url(../images/az3.jpg);}
 
 img.hero-text { /*Logo im hero */
 	position: absolute;
 	left:50%;
 	top:50%;
 	margin-top:-54px;
+	background:rgba(255,255,255,0.5);
 	margin-left:-319px;
-	background:rgba(240,240,240,0);
 	padding:10px 200px;
 }
-
-#team-hero {
-	position: relative;
-	height:450px;
+.hero {
+	height:350px;
 	width: 100%;
-	background:url(../images/1.jpg);
+	position: relative;
 	background-size: cover;
-	background-attachment: fixed;
 	background-repeat: no-repeat;
-	background-position: 50% 0;
+	background-attachment: fixed;
 	margin:3rem 0;
-	box-shadow: inset 0px 0px 4px #555;
+	box-shadow: inset 0px 0px 4px #333;
+
 }
-#team-hero h2 {
+#team-hero {
+	background-image:url(../images/1.jpg);
+	background-position: 50% 0;
+}
+.hero h2 {
+	font-weight: 400;
 	letter-spacing: 3px;
-	color:#eee;
-	text-shadow: 0px 0px 4px #000;
+	color:#fefefe;
+	text-shadow: 0px 0px 40px black;
 	position: absolute;
 	top:50%;
+	left:50%;
 	text-align: center;
-	width:100%;
-	height:100px;
-	margin-top:-50px;
-	line-height:100px;
+	width:200px;
+	height:4.2rem;
+	margin-left:-100px;
+	margin-top:-2.1rem;
+	line-height: 4.2rem;
+}
+#kontakt-hero {
+	background-image: url(../images/greimmap.jpg);
+	background-position: 50% 0;
 }
 .more-button {
 	text-align: center;
@@ -497,7 +523,10 @@ tr th {
 }
 @media (max-width: 549px) {
 	img.logo {
-		left: 20px;
+		left: 5%;
+	}
+	nav#navigation section.menu-bar a.fa:before {
+		right:10%;
 	}
 	ul.menu-bar li a {
 		margin-right:7%;
@@ -517,16 +546,14 @@ tr th {
 }
 @media (max-height: 500px) {
 
-	#team-hero,	header {
+	.hero,	header {
 		height:250px;
+	}
+	img.hero-text {
+		margin-top:-24px;
 	}
 	main {
 		margin-top:250px;
-	}
-}
-@media (max-height: 350px ) {
-	.hero-text {
-		display: none;
 	}
 }
 /*Footer media */

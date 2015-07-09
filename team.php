@@ -5,13 +5,16 @@
 	});
 </script>
 <?php include("include/header.php") ?>
+	<header class="header-team">
+		<img class="hero-text" src="images/logo2_trans_b.png" alt="Greim Architekten" >
+	</header>
 
 	<main class="boxshadow">
-		<section class="container">
+		<div class="container">
 
 			<h4 class="headline">Karl-Heinz Greim</h4>
 
-			<article class="row paddingbottom">
+			<section class="row paddingbottom">
 				<figure id="herrgreim" class="four columns">
 					<img src="images/herrgreim.jpg" class="grayscale" alt="Herr Greim">
 				</figure>
@@ -62,9 +65,9 @@
 							</tr>
 						</tbody>
 					</table>
-				</article>
+				</section>
 			</section>
-		</section>
+		</div>
 	</main>
 
 <?php include("include/footer.php") ?>

@@ -12,9 +12,12 @@
 	});
 </script>
 <?php include("include/header.php") ?>
+	<header class="header-kontakt">
+		<img class="hero-text" src="images/logo2_trans_b.png" alt="Greim Architekten" >
+	</header>
 
 	<main class="boxshadow">
-		<section class="container">
+		<div class="container">
 
 			<h4 class="headline">Greim Architekten</h4>
 			<p>W&ouml;lfelstra&szlig;e 6 <br>
@@ -34,18 +37,13 @@
 
 			<!-- Kontaktformular -->
 			<form id="kontaktformular">
-				<section class="row">
-					<div class="six columns">
-						<label for="exampleEmailInput">Ihre Email-Adresse</label>
-						<input class="u-full-width" type="email" id="exampleEmailInput">
-					</div>
-					<div class="six columns">
-						<label for="betreff">Betreff</label>
-						<input class="u-full-width" type="text" id="betreff">
-					</div>
-				</section>
+		
+				<label for="exampleEmailInput">Email-Adresse</label>
+				<input class="u-full-width" type="email" id="e_Email">
+				<label for="betreff">Betreff</label>
+				<input class="u-full-width" type="text" id="e_Betreff">
 				<label for="exampleMessage">Nachricht</label>
-				<textarea class="u-full-width" placeholder="Ihre Nachricht an uns" id="exampleMessage"></textarea>
+				<textarea class="u-full-width" placeholder="Ihre Nachricht an uns" id="e_Nachricht"></textarea>
 
 				<?php 
 					$zahl1 = rand(10,20);
@@ -59,10 +57,10 @@
 					<input type="checkbox">
 					<span class="label-body">Kopie an mich selbst schicken</span>
 				</label>
-				<input class="button-primary" type="submit" value="Submit">
+				<input class="button-primary" type="submit" id="e_Senden" value="Senden">
 			</form>
 
-		</section>
+		</div>
 	</main>
 
 <?php include("include/footer.php") ?>
