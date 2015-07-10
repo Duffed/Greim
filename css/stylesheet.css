@@ -456,22 +456,22 @@ footer img {
 }
 
 /* Kontakt */
-#intro_kontaktformular {
+#intro_kontaktformular { cursor: pointer;}
+.kontaktformular {
 	text-align: center;
-	cursor: pointer;
 	margin:3rem 0;
 }
-#intro_kontaktformular:hover > hr {
+.kontaktformular:hover > hr {
 	border-color:#ca0808;
 }
-#intro_kontaktformular hr, #intro_kontaktformular h2 {
+.kontaktformular hr, .kontaktformular h2 {
 	margin:0;
 	-webkit-transition: border .4s ease-out 0.1s;
 	-moz-transition: border .4s ease-out 0.1s;
 	-o-transition: border .4s ease-out 0.1s;
 	transition: border .4s ease-out 0.1s;
 }
-#intro_kontaktformular i {
+.kontaktformular i {
 	color:#ca0808;
 }
 #kontaktformular {
