@@ -6,6 +6,9 @@
 *:after {
 	box-sizing: inherit;
 }
+::selection {background: #ddd;color: #ca0808;}
+::-moz-selection {background: #ddd;color: #ca0808;}
+
 .paddingtop {padding-top:2.5rem;}
 .paddingbottom {padding-bottom:2.5rem;}
 
@@ -319,7 +322,7 @@ header {
 	left:0px;
 	width:100%;
 	height:450px;
-	z-index: -100;
+	z-index:-100;
 }
 .header-index {	background-image:url(../images/az3.jpg);}
 .header-team {	background-image:url(../images/az2.jpg);}
@@ -338,7 +341,7 @@ img.hero-text { /*Logo im hero */
 	padding:10px 200px;
 }
 .hero {
-	height:350px;
+	height:500px;
 	width: 100%;
 	position: relative;
 	background-size: cover;
