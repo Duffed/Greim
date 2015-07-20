@@ -580,3 +580,9 @@ tr th {
 		margin-bottom:10px;
 	}
 }
+
+@media (max-width: 260px) {
+	#mobile-menu {
+		width:100%;
+	}
+}

@@ -13,7 +13,7 @@
 						<label for="Betreff">Betreff</label>
 						<input class="u-full-width" type="text" id="Betreff" name="Betreff">
 						<label for="Nachricht">Nachricht</label>
-						<textarea class="u-full-width" placeholder="Ihre Nachricht an uns" id="Nachricht" name="Nachricht"></textarea>
+						<textarea class="u-full-width" id="Nachricht" name="Nachricht"></textarea>
 
 						<?php 
 							$zahl1 = rand(1,9);
